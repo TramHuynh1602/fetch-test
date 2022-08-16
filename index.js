@@ -90,7 +90,7 @@ function handleAddSong() {
 // update 
 
 function handleUpdateSong(id) {
-    isFixing = ! isFixing;
+    isFixing = !isFixing;
 
     var songInfo = document.querySelector(`[song-id = "${id}"]`);
     var a = document.querySelector(`[name-id = "${id}"]`);
@@ -149,11 +149,3 @@ function convertToInput(a,b,id){
 
 }
 
-function convertToNotInput(a,b){
-    return `
-    <div class="songInfo" song-id="${song.id}">
-           <h4 class="songName" name-id="${song.id}">${song.name}</h4> 
-            <p class="songPath" path-id="${song.id}">${song.path}</p>
-        </div>
-    `
-}
